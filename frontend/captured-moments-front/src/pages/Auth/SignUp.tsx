@@ -61,15 +61,25 @@ export const SignUp = () => {
       <aside className="login-ui-box right-10 -top-40 bg-emerald-500" />
       <aside className="login-ui-box bg-emerald-200 -bottom-40 right-1/2" />
 
-      <div className="container h-screen flex items-center justify-center px-20 mx-auto">
-        <section className="w-2/4 h-[90vh] flex items-start flex-col justify-end bg-[url('/images/floresta.png')] bg-cover bg-center rounded-lg p-10 z-50">
-          <h4 className="text-5xl text-white font-semibold leading-[58px]">
-            Embark on <br /> Your Journey
-          </h4>
-          <p className="text-[15px] text-white leading-6 pr-7 mt-4">
-            Sign up now to begin capturing your adventures and preserving 
-            unforgettable moments in your personal travel log.
-          </p>
+      <div className="container h-screen flex items-center justify-center px-20 mx-auto gap-20">
+        <section className="w-2/4 h-[90vh] flex items-start flex-col justify-end bg-cover bg-center rounded-lg p-10 z-50 relative">
+          <img 
+            src="/images/images/por-do-sol.png" 
+            alt="Pôr do Sol" 
+            className="absolute inset-0 w-full h-full object-cover rounded-lg" 
+          />
+          
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-lg"></div>
+          
+          <div className="relative z-10">
+            <h4 className="text-5xl text-white font-semibold leading-[58px]">
+              Embark on <br /> Your Journey
+            </h4>
+            <p className="text-[15px] text-white leading-6 pr-7 mt-4">
+              Sign up now to begin capturing your adventures and preserving 
+              unforgettable moments in your personal travel log.
+            </p>
+          </div>
         </section>
 
         <section className="w-2/4 h-[75vh] bg-white rounded-r-lg relative p-16 shadow-lg shadow-emerald-200/20">
